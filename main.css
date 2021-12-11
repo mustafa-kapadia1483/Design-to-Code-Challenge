@@ -5,168 +5,204 @@
   font-family: "Poppins", sans-serif;
 }
 
+:root {
+  --primary-green: #1fc39e;
+}
+
 html,
 body,
 main {
   height: 100%;
   width: 100%;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsuwl0F8yj9JiGhyi6JG_-8hHcVPLYcuiafg&usqp=CAU");
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-main {
-  position: relative;
+body {
+  background: #f8f8f8;
 }
 
-.back-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background-color: #fdfdfd;
-  top: 2rem;
-  left: 2rem;
-  text-decoration: none;
-  color: #000;
-  border-radius: 50%;
+.rounded-border {
+  border-radius: 5px;
 }
 
-.ticket-booking {
-  margin-top: 35vmax;
-  background: #efefef;
-  min-height: 100%;
-  padding-bottom: 2rem;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.green-text {
+  color: var(--primary-green);
 }
 
-.mode-selector-container {
-  margin-top: 1.5rem;
-  text-align: center;
-  display: flex;
-  background: #dfdfdf;
-  border-radius: 2rem;
-}
-
-.individual-mode-selector {
-  padding: 1em 2em;
-  font-weight: 500;
-}
-
-.individual-mode-selector.selected {
-  background: #fd6262;
-  color: #fff;
-  border-radius: 2rem;
-}
-
-.number-of-tickets {
-  margin-top: 2rem;
-}
-
-.individual-option-card {
-  margin-top: 2rem;
-  padding: 1rem 1.5rem;
-  background: #fff;
-  border-radius: 1rem;
-}
-
-.path-illustration-container {
-  position: relative;
+.top-header {
+  padding: 1.5rem 2rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
-  column-gap: 5rem;
+  align-items: center;
 }
 
-.path-illustration-container > h3 {
+.notification-icon {
+  height: 50px;
+  width: 50px;
+  border: 0.5px solid #6a6a6a;
   display: flex;
-  flex-direction: column;
-  font-size: 1rem;
-  row-gap: 0.5em;
-  font-weight: 500;
-  color: #6a6a6a;
-  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: relative;
 }
 
-.path-illustration-container > .journey-time {
-  color: #000;
-  font-weight: bold;
-  text-align: center;
-}
-
-.path-illustration-container > h3 > span {
+.notification-icon > ion-icon {
   font-size: 1.5rem;
 }
 
-.path-illustration-container > .journey-time > span {
-  color: #fd6262;
-}
-
-.end-destination {
-  text-align: right;
-}
-
-.dash-line {
+.notification-icon::after {
+  content: "";
   position: absolute;
-  border-color: #efefef;
-  border-left: 0;
-  border-top: 0;
+  height: 4px;
+  width: 4px;
+  background-color: var(--primary-green);
+  z-index: 2;
+  top: 28%;
+  right: 32%;
+  border: 2px solid #f8f8f8;
+  border-radius: 50%;
+}
 
-  border-bottom-width: 0.2rem;
-  border-style: dashed;
+.search-container {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.search {
   width: 100%;
-  z-index: 1;
-  top: 1rem;
+  padding: 1rem 2rem;
+  padding-right: 3.5rem;
+  border: none;
 }
 
-.journey-duration-container {
-  display: flex;
+.search:focus {
+  outline: 1px solid var(--primary-green);
 }
 
-.journey-duration-container {
-  margin-top: 1rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+.search-icon {
+  position: absolute;
+  top: 56%;
+  left: 2.7rem;
+  transform: translateY(-50%);
 }
 
-.time {
-  font-weight: 900;
+.filter-icon {
+  position: absolute;
+  top: 60%;
+  right: 2.7rem;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  color: var(--primary-green);
 }
 
-.date {
-  margin-top: 0.25em;
+.filter-icon::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 2.4rem;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 2px;
+  border-radius: 2px;
+  background: #efefef;
+}
+
+.bottom-header {
+  padding: 1rem 2rem;
+}
+
+.call-to-action {
+  padding: 1rem 2rem;
+  padding-left: 1rem;
+  background-image: url("https://ortoday.com/wp-content/uploads/2020/07/eq-1024x640.jpg");
+  background-position-y: center;
+  background-size: cover;
+  background-position-x: left;
+  background-repeat: no-repeat;
+}
+
+.call-to-action__heading {
   font-size: 1rem;
-  color: #6a6a6a;
-  font-weight: 400;
-  font-size: 0.8rem;
+  max-width: 50%;
 }
 
-.card-separator {
-  border-color: #efefef;
-  border-left: 0;
-  border-top: 0;
-  border-bottom-width: 0.2rem;
-  border-style: dashed;
-  width: 100%;
-  margin-top: 1.5rem;
+.btn {
+  font-size: 0.875rem;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary-green);
+  padding: 0.6rem 1.5rem;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 1.1px;
+  border-radius: 2rem;
 }
 
-.name-price-container {
-  margin-top: 1rem;
-  width: 100%;
+section.trending {
+  padding-bottom: 1rem;
+}
+
+.section-header {
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 1.2rem;
 }
 
-.name {
-  color: #3a3a3a;
+.section-header__heading {
+  font-size: 1rem;
+}
+
+.btn-alt {
+  text-decoration: none;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+}
+
+.btn-alt > ion-icon {
+  margin-left: 0.2em;
+  transform: translateY(-5%);
+}
+
+.nav {
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 2rem;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link > ion-icon {
+  font-size: 1.5rem;
+}
+
+.nav-link.selected > ion-icon {
+  color: var(--primary-green);
+}
+
+.nav-link.selected {
+  position: relative;
+}
+
+.nav-link.selected::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-green);
+  border-radius: 50%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }

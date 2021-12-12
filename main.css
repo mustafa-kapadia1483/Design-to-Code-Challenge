@@ -10,14 +10,17 @@
 }
 
 html,
-body,
-main {
+body {
   height: 100%;
   width: 100%;
 }
 
 body {
   background: #f8f8f8;
+}
+
+main {
+  padding-bottom: 6rem;
 }
 
 .rounded-border {
@@ -29,7 +32,7 @@ body {
 }
 
 .top-header {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
   padding-top: 2rem;
   display: flex;
   justify-content: space-between;
@@ -65,7 +68,7 @@ body {
 }
 
 .search-container {
-  padding: 0 2rem;
+  padding: 0 1rem;
   position: relative;
 }
 
@@ -83,14 +86,14 @@ body {
 .search-icon {
   position: absolute;
   top: 56%;
-  left: 2.7rem;
+  left: 1.7rem;
   transform: translateY(-50%);
 }
 
 .filter-icon {
   position: absolute;
   top: 60%;
-  right: 2.7rem;
+  right: 1.7rem;
   transform: translateY(-50%);
   border: none;
   background: transparent;
@@ -111,7 +114,7 @@ body {
 }
 
 .bottom-header {
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
 }
 
 .call-to-action {
@@ -120,7 +123,6 @@ body {
   background-image: url("https://ortoday.com/wp-content/uploads/2020/07/eq-1024x640.jpg");
   background-position-y: center;
   background-size: cover;
-  background-position-x: left;
   background-repeat: no-repeat;
 }
 
@@ -143,11 +145,11 @@ body {
 }
 
 section.trending {
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
 }
 
 .section-header {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   display: flex;
   justify-content: space-between;
 }
@@ -168,13 +170,105 @@ section.trending {
   transform: translateY(-5%);
 }
 
+.cards-container {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  overflow-x: scroll;
+  display: flex;
+  column-gap: 1.2rem;
+  flex-wrap: nowrap;
+}
+
+.cards-container::-webkit-scrollbar {
+  width: 0;
+}
+
+.individual-card-container {
+  max-width: 60vw;
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 1rem;
+  background: #fff;
+}
+
+.individual-card-container__img-container {
+  position: relative;
+}
+
+.individual-card-container__img-container > img {
+  width: 100%;
+}
+
+.img-container__bookmark-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 1.2rem;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.individual-card-container__heading {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+.individual-card-container__sub-heading {
+  margin-top: 0.1rem;
+  color: #6a6a6a;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+/* Review styling of progres bars */
+progress {
+  height: 8px;
+  width: 100%;
+  color: var(--primary-green);
+}
+
+progress::-webkit-progress-bar {
+  background-color: green;
+}
+
+progress::-webkit-progress-value {
+  background-color: green;
+}
+
+progress::-moz-progress-value {
+  background-color: var(--primary-green);
+}
+
+.progress-value-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.25rem;
+}
+
+.target {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #3a3a3a;
+}
+
+.progress-value {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
 .nav {
   background: #fff;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 1rem;
 }
 
 .nav-links {

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Link to Dribble Page: https://dribbble.com/shots/17042692-Crowdfunding-App -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Design-to-Code-01</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionic Iconns -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <main>
+      <header class="header">
+        <section class="top-header">
+          <h1 class="site-name">Crowdfundr<span class="green-text">.</span></h1>
+          <span class="notification-icon"
+            ><ion-icon name="notifications-outline"></ion-icon
+          ></span>
+        </section>
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search campaigns"
+            class="search rounded-border"
+          />
+          <span class="search-icon"
+            ><ion-icon name="search-outline"></ion-icon
+          ></span>
+          <button class="filter-icon">
+            <ion-icon name="options-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="bottom-header">
+          <header class="call-to-action rounded-border">
+            <h2 class="call-to-action__heading">
+              Do you have a really creative
+              <span class="green-text">idea?</span>
+            </h2>
+            <a href="#" class="btn">Start Campaign</a>
+          </header>
+        </div>
+      </header>
+      <section class="trending">
+        <div class="section-header">
+          <h2 class="section-header__heading">Trending Campaigns</h2>
+          <a href="#" class="btn-alt green-text"
+            >View All <ion-icon name="arrow-forward-outline"></ion-icon
+          ></a>
+        </div>
+        <div class="cards-container">
+          <!-- Start of Individual Card -->
+          <div class="individual-card-container rounded-border">
+            <div class="individual-card-container__img-container">
+              <img
+                class="rounded-border"
+                src="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="Image of kid learning"
+              />
+              <span class="img-container__bookmark-icon green-text"
+                ><ion-icon name="bookmark"></ion-icon
+              ></span>
+            </div>
+            <h4 class="individual-card-container__heading">
+              Online School for Kids
+            </h4>
+            <h5 class="individual-card-container__sub-heading">
+              Merit Academy
+            </h5>
+            <div class="progress-bar">
+              <div class="progress-bar__value"></div>
+            </div>
+            <div class="progress-value-container">
+              <h6 class="target">Target: ₹25000</h6>
+              <span class="progress-value green-text">75%</span>
+            </div>
+          </div>
+          <!-- End of Individual Card -->
+          <!-- Start of Individual Card -->
+          <div class="individual-card-container rounded-border">
+            <div class="individual-card-container__img-container">
+              <img
+                class="rounded-border"
+                src="https://images.pexels.com/photos/4143791/pexels-photo-4143791.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="Image of kid learning"
+              />
+              <span class="img-container__bookmark-icon green-text"
+                ><ion-icon name="bookmark"></ion-icon
+              ></span>
+            </div>
+            <h4 class="individual-card-container__heading">
+              Online School for Kids
+            </h4>
+            <h5 class="individual-card-container__sub-heading">
+              Merit Academy
+            </h5>
+            <div class="progress-bar">
+              <div class="progress-bar__value"></div>
+            </div>
+            <div class="progress-value-container">
+              <h6 class="target">Target: ₹25000</h6>
+              <span class="progress-value green-text">75%</span>
+            </div>
+          </div>
+          <!-- End of Individual Card -->
+        </div>
+      </section>
+    </main>
+    <nav class="nav">
+      <ul class="nav-links">
+        <li class="nav-link selected"><ion-icon name="home"></ion-icon></li>
+        <li class="nav-link"><ion-icon name="analytics"></ion-icon></li>
+        <li class="nav-link"><ion-icon name="bookmark-outline"></ion-icon></li>
+        <li class="nav-link"><ion-icon name="person-outline"></ion-icon></li>
+      </ul>
+    </nav>
+    <script src="./main.js"></script>
+    <script src="./removeSandboxWatermark.js"></script>
+  </body>
+</html>

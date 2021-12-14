@@ -4,3 +4,137 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+:root {
+  --primary-blue-color: #514cf1;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.top-nav {
+  padding: 0 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+}
+
+.option-btn-container {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.option-btn-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-btn__dot {
+  flex: 0 0 4px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #6a6a6a;
+}
+
+.location-dropdown {
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.location-dropdown > ion-icon {
+  color: var(--primary-blue-color);
+}
+
+.location-dropdown > ion-icon:nth-of-type(1) {
+  font-size: 0.8rem;
+  margin-right: 0.5em;
+}
+
+.location-dropdown > ion-icon:last-child {
+  margin-left: 0.2rem;
+  transform: translateY(-4%);
+}
+
+.profile-btn {
+  border: none;
+  border-radius: 50%;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.profile-img-container > img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  margin-top: 2rem;
+  padding: 0 1.2rem;
+}
+
+.header__title {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.header__title > span {
+  display: block;
+}
+
+.search-container {
+  position: relative;
+  margin-top: 1.2rem;
+  width: 100%;
+}
+
+.search {
+  border: none;
+  width: 100%;
+  padding: 1rem 1.4rem;
+  padding-left: 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.search::placeholder {
+  text-transform: capitalize;
+}
+
+.search-icon,
+.filter-btn {
+  position: absolute;
+}
+
+.search-icon {
+  top: 54%;
+  transform: translateY(-50%);
+  left: 1rem;
+  color: #6a6a6a;
+}
+
+.filter-btn {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  border: none;
+  background-color: var(--primary-blue-color);
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}

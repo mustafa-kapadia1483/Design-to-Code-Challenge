@@ -196,18 +196,30 @@ main > .section:nth-of-type(2) {
 
 .property-cards-container > .individual-card-container {
   background: #fff;
-  max-height: 60vh;
-  border-radius: 3rem;
-  position: relative;
-}
-
-.property-cards-container > .individual-card-container > .img-container > img {
-  width: 100%;
-  border-bottom-right-radius: 3rem;
+  min-height: 60vh;
+  background-image: url("https://images.unsplash.com/photo-1554435493-93422e8220c8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80https://images.unsplash.com/photo-1554435493-93422e8220c8%3Fixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80https://images.unsplash.com/photo-1554435493-93422e8220c8%3Fixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80https://images.unsplash.com/photo-1554435493-93422e8220c8%3Fixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80https://images.unsplash.com/photo-1554435493-93422e8220c8%3Fixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80https://images.unsplash.com/photo-1554435493-93422e8220c8%3Fixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80https://images.unsplash.com/photo-1554435493-93422e8220c8%3Fixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80https://images.unsplash.com/photo-1554435493-93422e8220c8%3Fixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80");
+  display: flex;
+  align-items: flex-end;
 }
 
 .card-info-container {
+  flex: 1 0 100%;
   background: #fff;
   border-top-left-radius: 3rem;
   padding: 2rem;
+  position: relative;
+}
+
+.card-info-container::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  top: -50px;
+  right: -25px;
+  height: 50px;
+  width: 25px;
+  border-top-left-radius: 25px;
+  box-shadow: 0 -25px 0 0 #fff;
+  transform-origin: 0;
+  transform: rotate(180deg);
 }
